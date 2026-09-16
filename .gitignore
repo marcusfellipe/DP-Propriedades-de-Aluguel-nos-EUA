@@ -1,0 +1,36 @@
+gitignore_content = """# Ignorar a pasta inteira de dados (extremamente importante para evitar vazamento e limite de tamanho)
+dados/
+
+# Mas criar uma exceção para permitir o envio de bases zipadas para reprodutibilidade
+!dados/*.zip
+
+# Ignorar arquivos de dados soltos que possam ser criados por engano
+*.csv
+*.xlsx
+*.xls
+*.rds
+*.RData
+
+# Arquivos temporários do R e RStudio/Positron
+.Rhistory
+.Rproj.user/
+.Ruserdata/
+.Rapp.history
+*.Rout
+*.Rout.save
+*.Rproj
+
+# Pastas de ambiente Python (caso decidam usar Python depois no Positron)
+.venv/
+env/
+__pycache__/
+
+# Arquivos do sistema operacional (ocultos)
+.DS_Store
+Thumbs.db
+"""
+
+with open(".gitignore", "w", encoding="utf-8") as f:
+    f.write(gitignore_content)
+
+print("[file-tag: .gitignore]")

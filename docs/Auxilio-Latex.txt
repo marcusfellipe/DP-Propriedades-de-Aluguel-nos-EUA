@@ -1,0 +1,39 @@
+\subsection{Base de Dados}
+Descreva a origem da base de dados. Quantas linhas (instâncias) e colunas (variáveis) ela possui? Quais são as variáveis preditoras e a variável alvo (se houver)? Cite a fonte dos dados original.
+
+\subsection{Pré-processamento e Limpeza de Dados}
+Explique como os dados brutos foram tratados. Houve remoção ou imputação de valores nulos (\textit{missing values})? Como os \textit{outliers} foram tratados? Foi feito algum tipo de normalização, transformação em variáveis categóricas (\textit{one-hot encoding}) ou criação de novas variáveis (\textit{feature engineering})?
+
+\subsection{Modelagem e Técnicas Aplicadas}
+Descreva as técnicas analíticas, testes estatísticos ou algoritmos de Machine Learning utilizados (Ex: Regressão Linear, Árvore de Decisão, K-Means). É importante justificar a escolha dos modelos. Cite as tecnologias utilizadas, como a linguagem R e os pacotes principais (ex: \texttt{dplyr}, \texttt{ggplot2}, \texttt{tidymodels}).
+
+\section{Resultados e Discussão}
+Apresente os resultados obtidos de forma clara e visual. Utilize gráficos gerados no RStudio (exporte-os e inclua aqui usando o pacote \texttt{graphicx}), tabelas e métricas de avaliação.
+
+\begin{table}[h]
+\centering
+\caption{Exemplo de Tabela de Métricas de Avaliação}
+\vspace{0.2cm}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Modelo} & \textbf{Acurácia} & \textbf{Precisão} \\
+\midrule
+Regressão Logística & 0.85 & 0.82 \\
+Random Forest & 0.91 & 0.89 \\
+\bottomrule
+\end{tabular}
+\label{tab:resultados}
+\end{table}
+
+Como mostrado na Tabela \ref{tab:resultados}, discuta \textit{por que} determinados resultados aconteceram. Relacione os resultados obtidos com o problema prático inicial: como essa descoberta ajuda a tomar melhores decisões?
+
+\section{Conclusão}
+Retome os objetivos principais e conclua se eles foram alcançados. Quais são os principais achados (insights) do projeto? Indique também as limitações do estudo e sugira possíveis trabalhos futuros ou melhorias que poderiam ser feitas caso houvesse mais tempo, poder computacional ou mais variáveis.
+
+\begin{thebibliography}{99}
+\bibitem{ref1}
+SOBRENOME, Nome do Autor. \textit{Título do Livro, Artigo ou Documentação}. Editora, Revista ou Plataforma, Ano de publicação.
+
+\bibitem{ref2}
+R CORE TEAM. \textit{R: A Language and Environment for Statistical Computing}. R Foundation for Statistical Computing, Vienna, Austria, 2026. Disponível em: \url{https://www.R-project.org/}.
+\end{thebibliography}
